@@ -1,0 +1,70 @@
+---
+title: "Sources"
+description: "Connect your data sources to AstroBee for natural language querying and analysis"
+icon: "database"
+---
+
+# Sources
+
+Connect your data to AstroBee to unlock the power of natural language querying. Currently supports BigQuery and CSV uploads, with Snowflake support coming soon.
+
+
+## Supported Data Sources
+
+<CardGroup cols={2}>
+  <Card title="Google BigQuery" icon="google">
+    Connect your BigQuery datasets for real-time querying and analysis
+  </Card>
+  <Card title="CSV Upload" icon="file-csv">
+    Upload CSV files for quick data exploration and analysis
+  </Card>
+  <Card title="Snowflake" icon="snowflake">
+    Coming soon - Connect your Snowflake data warehouse
+  </Card>
+</CardGroup>
+
+## Getting Started
+
+<Steps>
+  <Step title="Navigate to Sources">
+    Go to the Sources section in your AstroBee dashboard
+  </Step>
+  <Step title="Choose connection type">
+    Select BigQuery for database connections or upload CSV files
+  </Step>
+  <Step title="Configure connection">
+    Provide necessary credentials and connection details
+  </Step>
+  <Step title="Test and connect">
+    Verify the connection and start exploring your data
+  </Step>
+</Steps>
+
+## BigQuery Setup
+
+To connect your BigQuery data:
+
+1. **Authentication**: Provide your Google Cloud credentials
+2. **Project selection**: Choose your BigQuery project
+3. **Dataset access**: Select which datasets to connect
+4. **Permissions**: Ensure AstroBee has read access to your data
+
+## CSV Upload
+
+For quick data exploration:
+
+1. **File upload**: Drag and drop or select your CSV files
+2. **Data preview**: Review the data structure and column types
+3. **Schema detection**: AstroBee automatically detects data types
+4. **Import**: Complete the upload to start querying
+
+## Next Steps
+
+Once your sources are connected:
+- [Review your ontology](/features/ontology) to understand discovered entities
+- [Start asking questions](/features/ask) about your data
+- [Explore relationships](/guides/data-exploration) between different data points
+
+<Tip>
+**Data quality**: Ensure your data sources are clean and well-structured for the best results with AstroBee's AI-powered analysis.
+</Tip>
