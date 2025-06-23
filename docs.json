@@ -1,55 +1,87 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "maple",
   "name": "Mint Starter Kit",
   "colors": {
-    "primary": "#16A34A",
+    "primary": "#FF611A",
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "favicon": "/favicon.svg",
+  "background": {
+    "color": {
+      "light": "#f7f7f7",
+      "dark": "#111827"
+  }
+  },
+  "favicon": "/favicon.ico",
+  "fonts": {
+    "heading": {
+      "family": "ITCAvantGardePro-Demi",
+      "source": "https://cdn.prod.website-files.com/67853c5579794ae9d6d4a11a/67ae813c7d76a1fe5ebc33dc_font.woff",
+      "format": "woff",
+      "weight": 500
+    },
+    "body": {
+      "family": "ITCAvantGardePro-Md",
+      "source": "https://cdn.prod.website-files.com/67853c5579794ae9d6d4a11a/67ae813c16af12d0efb455e5_font.woff",
+      "format": "woff",
+      "weight": 400
+    }
+  },
+  "appearance": {
+    "default": "light",
+    "strict": true
+  },
   "navigation": {
-    "tabs": [
+    "anchors": [
       {
-        "tab": "Guides",
+        "anchor": "Documentation",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Getting Started",
             "pages": [
               "index",
               "quickstart",
-              "development"
+              "installation",
+              "first-steps"
             ]
           },
           {
-            "group": "Essentials",
+            "group": "Core Features",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
+              "features/ontology",
+              "features/ask",
+              "features/sources",
+              "features/knowledge",
+              "features/access-control"
             ]
           },
           {
-            "group": "Endpoint Examples",
+            "group": "Data Management",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "data/connecting-sources",
+              "data/data-quality",
+              "data/versioning",
+              "data/schemas"
+            ]
+          },
+          {
+            "group": "User Guides",
+            "pages": [
+              "guides/first-query",
+              "guides/advanced-queries",
+              "guides/collaboration",
+              "guides/dashboards",
+              "guides/exports"
+            ]
+          },
+          {
+            "group": "Administration",
+            "pages": [
+              "admin/user-management",
+              "admin/permissions",
+              "admin/organization-settings",
+              "admin/security"
             ]
           }
         ]
@@ -58,18 +90,8 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
           "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "href": "https://blog.astrobee.ai/",
           "icon": "newspaper"
         }
       ]
@@ -77,26 +99,27 @@
   },
   "logo": {
     "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "dark": "/logo/dark.svg",
+    "href": "https://astrobee.ai"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@astrobee.ai"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Try The Playground",
+      "href": "https://app.astrobee.ai/"
     }
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/astrobeeai",
+      "github": "https://github.com/kurtosis-tech/",
+      "linkedin": "https://www.linkedin.com/company/astrobee/"
     }
   }
 }
